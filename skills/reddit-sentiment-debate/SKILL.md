@@ -2,7 +2,7 @@
 name: reddit-sentiment-debate
 metadata:
   author: Stefano Leone
-   linkedin: "https://www.linkedin.com/in/stefanoleone"
+  linkedin: "https://www.linkedin.com/in/stefanoleone"
   created: 2026-03-01
 description: >
   Sentiment-driven market analysis skill that mines Reddit communities to understand how a specific persona perceives a product or feature, then runs a structured PRO vs. AGAINST agent debate grounded in real community data, and produces a ranked minimum feature list to convert skeptics. Trigger whenever the user asks "Would [persona] be interested in [product/feature]?", "What would it take to convince [audience] to adopt [X]?", "What are the blockers for [user type] to buy [product]?", or wants persona-driven Reddit sentiment analysis, product-market fit research, market validation, or a debate between advocates and skeptics. Also trigger for: "run a sentiment analysis on Reddit about X", "what does Reddit think about Y", "debate pros and cons of Z for [persona]".
