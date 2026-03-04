@@ -53,7 +53,7 @@ Place the `SKILL.md` file in `~/.claude/commands/` to make it available across a
 
 ## About
 
-Built by [Stefano Leone](https://github.com/stefanoleone) — Senior Product Manager at IOHK / Input Output, working on the Cardano High Assurance Initiative.
+Built by [Stefano Leone](https://github.com/stefanoleone) — AI Product Manager at IO Group, startup mentor, and advisor.
 
 These skills reflect real workflows at the intersection of product management, AI tooling, and blockchain development.
 
