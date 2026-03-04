@@ -35,13 +35,7 @@ Takes a simple question — *"Would [persona] be interested in [product]?"* — 
 
 ## How to install
 
-Copy `SKILL.md` to your Claude Code skills directory:
-
-```bash
-cp SKILL.md /mnt/skills/user/reddit-sentiment-debate/SKILL.md
-```
-
-Claude will automatically detect and apply the skill when the trigger conditions match.
+See the [installation instructions](../../README.md#how-to-use-these-skills) in the main README.
 
 ---
 
