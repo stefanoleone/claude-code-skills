@@ -27,9 +27,27 @@ Skills are loaded into Claude's context to guide behavior for specific, recurrin
 
 ## How to use these skills
 
-1. Copy the `SKILL.md` file from any skill folder
-2. Place it in your Claude Code skills directory: `/mnt/skills/user/<skill-name>/SKILL.md`
-3. Claude will automatically detect and apply it when the trigger conditions match
+### Option 1: Install from GitHub (quickest)
+
+Run `/install-skill` inside Claude Code and paste the raw GitHub URL to the `SKILL.md` file you want to install (e.g. `https://raw.githubusercontent.com/stefanoleone/claude-code-skills/main/skills/reddit-sentiment-debate/SKILL.md`).
+
+### Option 2: Manual install (project-level)
+
+Copy the content of a `SKILL.md` file into your project's `.claude/commands/` directory:
+
+```
+.claude/commands/reddit-sentiment-debate.md
+```
+
+The skill will be available as a slash command (`/reddit-sentiment-debate`) when working in that project.
+
+### Option 3: Manual install (global)
+
+Place the file in `~/.claude/commands/` to make the skill available across all your projects:
+
+```
+~/.claude/commands/reddit-sentiment-debate.md
+```
 
 ---
 
