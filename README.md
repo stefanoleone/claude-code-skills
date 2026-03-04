@@ -29,7 +29,7 @@ Skills are loaded into Claude's context to guide behavior for specific, recurrin
 
 ### Option 1: Install from GitHub (quickest)
 
-Run `/install-skill` inside Claude Code and paste the raw GitHub URL to the `SKILL.md` file you want to install (e.g. `https://raw.githubusercontent.com/stefanoleone/claude-code-skills/main/skills/reddit-sentiment-debate/SKILL.md`).
+Run `/install-skill` inside Claude Code and paste the GitHub URL to the `SKILL.md` file you want to install (e.g. `https://github.com/stefanoleone/claude-code-skills/blob/main/skills/reddit-sentiment-debate/SKILL.md`).
 
 ### Option 2: Manual install (project-level)
 
