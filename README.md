@@ -33,20 +33,20 @@ Run `/install-skill` inside Claude Code and paste the GitHub URL to the `SKILL.m
 
 ### Option 2: Manual install (project-level)
 
-Copy the content of a `SKILL.md` file into your project's `.claude/commands/` directory:
+Copy the `SKILL.md` file into your project's `.claude/commands/` directory:
 
 ```
-.claude/commands/reddit-sentiment-debate.md
+.claude/commands/SKILL.md
 ```
 
-The skill will be available as a slash command (`/reddit-sentiment-debate`) when working in that project.
+The skill will be available as a slash command when working in that project.
 
 ### Option 3: Manual install (global)
 
-Place the file in `~/.claude/commands/` to make the skill available across all your projects:
+Place the `SKILL.md` file in `~/.claude/commands/` to make it available across all your projects:
 
 ```
-~/.claude/commands/reddit-sentiment-debate.md
+~/.claude/commands/SKILL.md
 ```
 
 ---
