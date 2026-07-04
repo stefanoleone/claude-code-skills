@@ -22,6 +22,7 @@ Skills are loaded into Claude's context to guide behavior for specific, recurrin
 | Skill | Description | Use case |
 |---|---|---|
 | [reddit-sentiment-debate](./skills/reddit-sentiment-debate/) | Reddit intelligence → agent debate → minimum feature list | Product-market fit research, persona validation |
+| [adversarial-pr-review](./skills/adversarial-pr-review/) | Second-opinion PR review by an out-of-family model (Opus / Gemini / GPT / OpenRouter) | Catch what the coding agent's own self-review misses before merge |
 
 ---
 
