@@ -160,17 +160,7 @@ Ticket fetching lives entirely in the orchestration layer (`SKILL.md`) — the P
 
 ## Install
 
-See the [installation instructions](../../README.md#how-to-use-these-skills) in the main README. One caveat specific to this skill: it ships a helper script and a system prompt alongside `SKILL.md`, so copy the **whole directory**, not a single file:
-
-```bash
-# project-level
-cp -r skills/adversarial-pr-review .claude/skills/
-
-# or user-level (available in every project)
-cp -r skills/adversarial-pr-review ~/.claude/skills/
-```
-
-Then invoke it with any of the [example triggers](#example-triggers) above.
+See the [installation instructions](../../README.md#how-to-use-these-skills) in the main README, then invoke it with any of the [example triggers](#example-triggers) above.
 
 ---
 

@@ -14,7 +14,11 @@ Each skill lives at `skills/<skill-name>/` and contains:
 - `README.md` — human-facing docs: what it does, example triggers, output structure, install pointer back to the main README.
 - Optional supporting files (scripts, system prompts) when the skill orchestrates external tooling.
 
-When adding or renaming a skill, also update the skills table in the root `README.md`. `docs/how-to-use.md` documents the generic install/authoring flow.
+When adding or renaming a skill, also update the skills table in the root `README.md` and the plugin `description` in `.claude-plugin/marketplace.json`. `docs/how-to-use.md` documents the generic install/authoring flow.
+
+## Distribution
+
+The repo is a Claude Code plugin marketplace: `.claude-plugin/marketplace.json` declares a single plugin named `skills` with `source: "./"`, so every directory under `skills/` is auto-discovered as a skill of that plugin (install: `/plugin marketplace add stefanoleone/claude-code-skills`, then `/plugin install skills@claude-code-skills`). The plugin deliberately declares no `version`: versioning rides on git commit SHAs, so every commit to `main` reaches users on `/plugin marketplace update` — do not add a `version` field without adopting a release process.
 
 ## adversarial-pr-review architecture
 

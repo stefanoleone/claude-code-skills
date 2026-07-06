@@ -28,27 +28,16 @@ Skills are loaded into Claude's context to guide behavior for specific, recurrin
 
 ## How to use these skills
 
-### Option 1: Install from GitHub (quickest)
-
-Run `/install-skill` inside Claude Code and paste the GitHub URL to the `SKILL.md` file you want to install (e.g. `https://github.com/stefanoleone/claude-code-skills/blob/main/skills/reddit-sentiment-debate/SKILL.md`).
-
-### Option 2: Manual install (project-level)
-
-Copy the `SKILL.md` file into your project's `.claude/commands/` directory:
+This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces). Two commands inside Claude Code:
 
 ```
-.claude/commands/SKILL.md
+/plugin marketplace add stefanoleone/claude-code-skills
+/plugin install skills@claude-code-skills
 ```
 
-The skill will be available as a slash command when working in that project.
+This installs every skill in the collection — each travels as a full directory (`SKILL.md` plus any helper scripts and system prompts it needs at runtime). Skills trigger automatically on the phrases in their descriptions, or invoke one directly, e.g. `/skills:adversarial-pr-review`.
 
-### Option 3: Manual install (global)
-
-Place the `SKILL.md` file in `~/.claude/commands/` to make it available across all your projects:
-
-```
-~/.claude/commands/SKILL.md
-```
+To pick up new and updated skills later, run `/plugin marketplace update claude-code-skills` — every commit to `main` is a new version.
 
 ---
 

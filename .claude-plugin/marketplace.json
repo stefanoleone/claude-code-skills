@@ -1,0 +1,14 @@
+{
+  "name": "claude-code-skills",
+  "owner": {
+    "name": "Stefano Leone",
+    "url": "https://github.com/stefanoleone"
+  },
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "Curated Claude Code skills: adversarial-pr-review (out-of-family second-opinion PR review) and reddit-sentiment-debate (Reddit intelligence → agent debate → minimum feature list)."
+    }
+  ]
+}

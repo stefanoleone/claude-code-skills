@@ -2,7 +2,7 @@
 
 ## What is a skill?
 
-A skill is a `SKILL.md` file that defines how Claude should approach a specific type of task. It includes:
+A skill is a directory whose `SKILL.md` file defines how Claude should approach a specific type of task, alongside any supporting files the skill needs at runtime (system prompts, helper scripts). `SKILL.md` includes:
 - A trigger description (what kind of request activates it)
 - A step-by-step execution protocol
 - Output format and quality standards
@@ -11,15 +11,16 @@ Skills are loaded into Claude's context window before it responds, so it can fol
 
 ## Installing a skill
 
-1. Find the skill folder you want (e.g., `skills/reddit-sentiment-debate/`)
-2. Copy the `SKILL.md` file to your Claude Code skills directory:
+The repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) (see `.claude-plugin/marketplace.json`). Inside Claude Code:
 
-```bash
-# Replace <skill-name> with the folder name
-cp skills/<skill-name>/SKILL.md /mnt/skills/user/<skill-name>/SKILL.md
+```
+/plugin marketplace add stefanoleone/claude-code-skills
+/plugin install skills@claude-code-skills
 ```
 
-3. Claude will automatically detect and apply it when the trigger conditions match — no further configuration needed.
+This installs every skill in the collection as one plugin — each skill travels as a full directory (`SKILL.md` plus any helper scripts and system prompts it needs at runtime). Update with `/plugin marketplace update claude-code-skills`; the plugin declares no `version`, so every commit to `main` is a new version.
+
+Claude will automatically detect and apply a skill when its trigger conditions match — no further configuration needed. You can also invoke one directly with its namespaced command, e.g. `/skills:reddit-sentiment-debate`.
 
 ## Triggering a skill
 
