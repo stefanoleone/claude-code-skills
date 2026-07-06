@@ -28,16 +28,17 @@ Skills are loaded into Claude's context to guide behavior for specific, recurrin
 
 ## How to use these skills
 
-This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces). Two commands inside Claude Code:
+This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces): each skill is its own plugin, so you install only what you need. Inside Claude Code:
 
 ```
 /plugin marketplace add stefanoleone/claude-code-skills
-/plugin install skills@claude-code-skills
+/plugin install adversarial-pr-review@claude-code-skills
+/plugin install reddit-sentiment-debate@claude-code-skills
 ```
 
-This installs every skill in the collection — each travels as a full directory (`SKILL.md` plus any helper scripts and system prompts it needs at runtime). Skills trigger automatically on the phrases in their descriptions, or invoke one directly, e.g. `/skills:adversarial-pr-review`.
+Add the marketplace once, then install any subset — or browse the catalog interactively with `/plugin`. Each skill travels as a full directory (`SKILL.md` plus any helper scripts and system prompts it needs at runtime) and triggers automatically on the phrases in its description.
 
-To pick up new and updated skills later, run `/plugin marketplace update claude-code-skills` — every commit to `main` is a new version.
+To pick up updates later, run `/plugin marketplace update claude-code-skills` — every commit to `main` is a new version.
 
 ---
 

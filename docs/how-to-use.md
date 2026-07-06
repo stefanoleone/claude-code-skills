@@ -11,16 +11,16 @@ Skills are loaded into Claude's context window before it responds, so it can fol
 
 ## Installing a skill
 
-The repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) (see `.claude-plugin/marketplace.json`). Inside Claude Code:
+The repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) (see `.claude-plugin/marketplace.json`) where each skill is its own plugin. Inside Claude Code, add the marketplace once, then install the skills you want:
 
 ```
 /plugin marketplace add stefanoleone/claude-code-skills
-/plugin install skills@claude-code-skills
+/plugin install <skill-name>@claude-code-skills
 ```
 
-This installs every skill in the collection as one plugin — each skill travels as a full directory (`SKILL.md` plus any helper scripts and system prompts it needs at runtime). Update with `/plugin marketplace update claude-code-skills`; the plugin declares no `version`, so every commit to `main` is a new version.
+Each skill travels as a full directory (`SKILL.md` plus any helper scripts and system prompts it needs at runtime). Update with `/plugin marketplace update claude-code-skills`; the plugins declare no `version`, so every commit to `main` is a new version.
 
-Claude will automatically detect and apply a skill when its trigger conditions match — no further configuration needed. You can also invoke one directly with its namespaced command, e.g. `/skills:reddit-sentiment-debate`.
+Claude will automatically detect and apply a skill when its trigger conditions match — no further configuration needed.
 
 ## Triggering a skill
 

@@ -6,9 +6,14 @@
   },
   "plugins": [
     {
-      "name": "skills",
-      "source": "./",
-      "description": "Curated Claude Code skills: adversarial-pr-review (out-of-family second-opinion PR review) and reddit-sentiment-debate (Reddit intelligence → agent debate → minimum feature list)."
+      "name": "adversarial-pr-review",
+      "source": "./skills/adversarial-pr-review",
+      "description": "Second-opinion PR review by an out-of-family model (Opus / Gemini / GPT / OpenRouter), with a strict verdict checked against the PR's ticket."
+    },
+    {
+      "name": "reddit-sentiment-debate",
+      "source": "./skills/reddit-sentiment-debate",
+      "description": "Reddit intelligence → agent debate → minimum feature list, for product-market fit research and persona validation."
     }
   ]
 }
